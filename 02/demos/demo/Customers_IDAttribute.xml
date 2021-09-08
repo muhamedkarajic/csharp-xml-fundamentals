@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+   <!-- The following is customer data -->
+   <Customer customerId="1">
+      <Title>Mr.</Title>
+      <FirstName>Orlando</FirstName>
+      <MiddleName>N.</MiddleName>
+      <LastName>Gee</LastName>
+      <CompanyName>A Bike Store</CompanyName>
+      <SalesPerson>adventure-works\pamela0</SalesPerson>
+      <EmailAddress>orlando0@adventure-works.com</EmailAddress>
+      <Phone>245-555-0173</Phone>
+   </Customer>
+   <Customer customerId="2">
+      <Title>Mr.</Title>
+      <FirstName>Keith</FirstName>
+      <MiddleName>asdf</MiddleName>
+      <LastName>Harris</LastName>
+      <CompanyName>Progressive Sports</CompanyName>
+      <SalesPerson>adventure-works\david8</SalesPerson>
+      <EmailAddress>keith0@adventure-works.com</EmailAddress>
+      <Phone>170-555-0127</Phone>
+   </Customer>
+   <Customer customerId="3">
+      <Title>Ms.</Title>
+      <FirstName>Donna</FirstName>
+      <LastName>Carreras</LastName>
+      <CompanyName>Advanced Bike Components</CompanyName>
+      <SalesPerson>adventure-works\jillian0</SalesPerson>
+      <EmailAddress>donna0@adventure-works.com</EmailAddress>
+      <Phone>279-555-0130</Phone>
+   </Customer>
+</Customers>

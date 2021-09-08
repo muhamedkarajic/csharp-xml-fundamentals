@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="SerializeXML.Samples.Sample06.SerializeSampleControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:SerializeXML.Samples.Sample06"
+             xmlns:UserControls="clr-namespace:SerializeXML.Samples.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             Style="{StaticResource screenStyle}">
+  <UserControl.Resources>
+    <vm:SerializeSampleViewModel x:Key="viewModel" />
+  </UserControl.Resources>
+  <Border Style="{StaticResource screenBorder}">
+    <Grid DataContext="{Binding Source={StaticResource viewModel}}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Label Content="Serialization Sample Using BinaryFormatter"
+             Grid.Row="0"
+             FontSize="24" />
+      <WrapPanel Grid.Row="1">
+        <Button Content="Serialize Customer"
+                Click="SerializeCustomerButton_Click" />
+        <Button Content="Deserialize Customer"
+                Click="DeserializeCustomerButton_Click" />
+      </WrapPanel>
+      <UserControls:CustomerDetail Grid.Row="2" />
+      <UserControls:ResultControl Grid.Row="3" />
+    </Grid>
+  </Border>
+</UserControl>

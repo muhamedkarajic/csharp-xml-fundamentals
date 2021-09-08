@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+   <!-- The following is customer data -->
+   <Customer customerId="1">
+      <Title>Mr.</Title>
+      <FirstName>Orlando</FirstName>
+      <MiddleName>N.</MiddleName>
+      <LastName>Gee</LastName>
+      <CompanyName>A Bike Store</CompanyName>
+      <SalesPerson>adventure-works\pamela0</SalesPerson>
+      <EmailAddress>orlando0@adventure-works.com</EmailAddress>
+      <Phone>245-555-0173</Phone>
+   </Customer>
+   <Customer customerId="6">
+      <Title>Ms.</Title>
+      <FirstName>Rosmarie</FirstName>
+      <MiddleName>J.</MiddleName>
+      <LastName>Carroll</LastName>
+      <CompanyName>Aerobic Exercise Company</CompanyName>
+      <SalesPerson>adventure-works\linda3</SalesPerson>
+      <EmailAddress>rosmarie0@adventure-works.com</EmailAddress>
+      <Phone>244-555-0112</Phone>
+      <!-- The following is sales data for a customer -->
+      <SalesHeaders>
+         <SalesHeader>
+            <SalesOrderID>71915</SalesOrderID>
+            <OrderDate>2004-06-01T00:00:00</OrderDate>
+            <DueDate>2004-06-13T00:00:00</DueDate>
+            <ShipDate>2004-06-08T00:00:00</ShipDate>
+            <Status>5</Status>
+            <SalesOrderNumber>SO71915</SalesOrderNumber>
+            <PurchaseOrderNumber>PO2349143275</PurchaseOrderNumber>
+            <AccountNumber>10-4020-000006</AccountNumber>
+            <CustomerID>6</CustomerID>
+            <ShipToAddressID>989</ShipToAddressID>
+            <BillToAddressID>989</BillToAddressID>
+            <ShipMethod>CARGO TRANSPORT 5</ShipMethod>
+            <SubTotal>2137.2310</SubTotal>
+            <TaxAmt>170.9785</TaxAmt>
+            <Freight>53.4308</Freight>
+            <TotalDue>2361.6403</TotalDue>
+            <OrderDetails>
+               <OrderDetail>
+                  <SalesOrderID>71915</SalesOrderID>
+                  <SalesOrderDetailID>113089</SalesOrderDetailID>
+                  <OrderQty>3</OrderQty>
+                  <ProductID>836</ProductID>
+                  <UnitPrice>356.8980</UnitPrice>
+                  <UnitPriceDiscount>0.0000</UnitPriceDiscount>
+                  <LineTotal>1070.694000</LineTotal>
+               </OrderDetail>
+               <OrderDetail>
+                  <SalesOrderID>71915</SalesOrderID>
+                  <SalesOrderDetailID>113090</SalesOrderDetailID>
+                  <OrderQty>2</OrderQty>
+                  <ProductID>738</ProductID>
+                  <UnitPrice>202.3320</UnitPrice>
+                  <UnitPriceDiscount>0.0000</UnitPriceDiscount>
+                  <LineTotal>404.664000</LineTotal>
+               </OrderDetail>
+               <OrderDetail>
+                  <SalesOrderID>71915</SalesOrderID>
+                  <SalesOrderDetailID>113091</SalesOrderDetailID>
+                  <OrderQty>4</OrderQty>
+                  <ProductID>938</ProductID>
+                  <UnitPrice>24.2940</UnitPrice>
+                  <UnitPriceDiscount>0.0000</UnitPriceDiscount>
+                  <LineTotal>97.176000</LineTotal>
+               </OrderDetail>
+               <OrderDetail>
+                  <SalesOrderID>71915</SalesOrderID>
+                  <SalesOrderDetailID>113092</SalesOrderDetailID>
+                  <OrderQty>3</OrderQty>
+                  <ProductID>939</ProductID>
+                  <UnitPrice>37.2540</UnitPrice>
+                  <UnitPriceDiscount>0.0000</UnitPriceDiscount>
+                  <LineTotal>111.762000</LineTotal>
+               </OrderDetail>
+               <OrderDetail>
+                  <SalesOrderID>71915</SalesOrderID>
+                  <SalesOrderDetailID>113093</SalesOrderDetailID>
+                  <OrderQty>1</OrderQty>
+                  <ProductID>940</ProductID>
+                  <UnitPrice>48.5940</UnitPrice>
+                  <UnitPriceDiscount>0.0000</UnitPriceDiscount>
+                  <LineTotal>48.594000</LineTotal>
+               </OrderDetail>
+            </OrderDetails>
+         </SalesHeader>
+      </SalesHeaders>
+   </Customer>
+</Customers>

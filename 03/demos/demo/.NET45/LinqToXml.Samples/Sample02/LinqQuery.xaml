@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="LinqToXml.Samples.Sample02.LinqQuery"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:LinqToXml.Samples.Sample02"
+             xmlns:UserControls="clr-namespace:LinqToXml.Samples.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             Style="{StaticResource screenStyle}">
+  <UserControl.Resources>
+    <vm:LinqQueryViewModel x:Key="viewModel" />
+  </UserControl.Resources>
+  <Border Style="{StaticResource screenBorder}">
+    <Grid DataContext="{Binding Source={StaticResource viewModel}}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <WrapPanel Grid.Row="0">
+        <Button Content="All Nodes"
+                Click="AllNodesButton_Click" />
+        <Button Content="Single Node"
+                Click="SingleNodeButton_Click" />
+        <Button Content="Where Clause"
+                Click="WhereButton_Click" />
+        <Button Content="Where Clause Using Attribute"
+                Click="WhereAttributeButton_Click" />
+        <Button Content="Order By"
+                Click="OrderByButton_Click" />
+        <Button Content="Join"
+                Click="JoinButton_Click" />
+        <Button Content="Read Config File"
+                Click="ReadConfigButton_Click" />
+        <Button Content="Load Classes"
+                Click="LoadClassesButton_Click" />
+      </WrapPanel>
+      <UserControls:ResultControl Grid.Row="1"
+                                  DataContext="{Binding Source={StaticResource viewModel}}" />
+    </Grid>
+  </Border>
+</UserControl>

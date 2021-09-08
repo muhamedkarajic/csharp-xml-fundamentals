@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+   <!-- Attribute-based customer data -->
+   <Customer CustomerID="1"
+     Title="Mr."
+     FirstName="Orlando"
+     MiddleName="N."
+     LastName="Gee"
+     CompanyName="A Bike Store"
+     SalesPerson="adventure-works\pamela0"
+     EmailAddress="orlando0@adventure-works.com"
+     Phone="245-555-0173" />
+</Customers>

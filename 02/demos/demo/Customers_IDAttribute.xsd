@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Customer" maxOccurs="unbounded" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The following is customer data</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Title"/>
+              <xs:element type="xs:string" name="FirstName"/>
+              <xs:element type="xs:string" name="MiddleName" minOccurs="0"/>
+              <xs:element type="xs:string" name="LastName"/>
+              <xs:element type="xs:string" name="CompanyName"/>
+              <xs:element type="xs:string" name="SalesPerson"/>
+              <xs:element type="xs:string" name="EmailAddress"/>
+              <xs:element type="xs:string" name="Phone"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="customerId" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

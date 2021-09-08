@@ -1,0 +1,76 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Customer" maxOccurs="unbounded" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The following is customer data</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Title"/>
+              <xs:element type="xs:string" name="FirstName"/>
+              <xs:element type="xs:string" name="MiddleName"/>
+              <xs:element type="xs:string" name="LastName"/>
+              <xs:element type="xs:string" name="CompanyName"/>
+              <xs:element type="xs:string" name="SalesPerson"/>
+              <xs:element type="xs:string" name="EmailAddress"/>
+              <xs:element type="xs:string" name="Phone"/>
+              <xs:element name="SalesHeaders" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>The following is sales data for a customer</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SalesHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:int" name="SalesOrderID"/>
+                          <xs:element type="xs:dateTime" name="OrderDate"/>
+                          <xs:element type="xs:dateTime" name="DueDate"/>
+                          <xs:element type="xs:dateTime" name="ShipDate"/>
+                          <xs:element type="xs:byte" name="Status"/>
+                          <xs:element type="xs:string" name="SalesOrderNumber"/>
+                          <xs:element type="xs:string" name="PurchaseOrderNumber"/>
+                          <xs:element type="xs:string" name="AccountNumber"/>
+                          <xs:element type="xs:byte" name="CustomerID"/>
+                          <xs:element type="xs:short" name="ShipToAddressID"/>
+                          <xs:element type="xs:short" name="BillToAddressID"/>
+                          <xs:element type="xs:string" name="ShipMethod"/>
+                          <xs:element type="xs:float" name="SubTotal"/>
+                          <xs:element type="xs:float" name="TaxAmt"/>
+                          <xs:element type="xs:float" name="Freight"/>
+                          <xs:element type="xs:float" name="TotalDue"/>
+                          <xs:element name="OrderDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="OrderDetail" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:int" name="SalesOrderID"/>
+                                      <xs:element type="xs:int" name="SalesOrderDetailID"/>
+                                      <xs:element type="xs:byte" name="OrderQty"/>
+                                      <xs:element type="xs:short" name="ProductID"/>
+                                      <xs:element type="xs:float" name="UnitPrice"/>
+                                      <xs:element type="xs:float" name="UnitPriceDiscount"/>
+                                      <xs:element type="xs:float" name="LineTotal"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="customerId" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
